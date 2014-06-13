@@ -1,6 +1,6 @@
 #Step 1
 
-<pre>
+```obj-c
  //要装入tabbar的ctrlers
     HomeViewCtrl *homeCtrl = [[HomeViewCtrl alloc] initWithNibName:@"HomeViewCtrl" bundle:nil];
     MLNavigationController *nav1 = [[MLNavigationController alloc] initWithRootViewController:homeCtrl];
@@ -17,7 +17,7 @@
     
     NSArray *ctrlArray = [NSArray arrayWithObjects:nav1,nav2,nav3,nav4, nil];
     
-</pre>
+```
 
 #Step 2
 
