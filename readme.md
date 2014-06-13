@@ -21,7 +21,7 @@
 
 #Step 2
 
-<pre>
+```obj-c
 //自定义tabbar的图片
     NSMutableDictionary *imgDic = [NSMutableDictionary dictionaryWithCapacity:3];
     [imgDic setObject:[UIImage imageNamed:@"新闻"] forKey:@"Default"];
@@ -44,19 +44,17 @@
     [imgDic4 setObject:@"更多" forKey:@"Title"];
     
     NSArray *imgArr = [NSArray arrayWithObjects:imgDic,imgDic2,imgDic3,imgDic4,nil];
-    
-   
-</pre>
+```
 
 #Step 3
 
-<pre>
+```obj-c
  customTabBarController = [[CustomTabBarController alloc]initWithViewControllers:ctrlArray imageArray:imgArr];
     [customTabBarController setTabBarTransparent:YES];
     customTabBarController.delegate = self;
 
     [_window setRootViewController:_nav];
     
-</pre>
+```
 
 #Good luck
