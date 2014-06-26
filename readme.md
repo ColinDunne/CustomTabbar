@@ -1,3 +1,5 @@
+一个方便好用的自定义tabbar，注意，不支持arc，需添加-fno-objc-arc
+
 ###Step 1，在Appdelegate.h添加代理
 
 ```obj-c
@@ -68,6 +70,16 @@
 
     [_window setRootViewController:_nav];
     
+```
+
+###隐藏与显示tabbar
+```obj-c
+//因为CustomTabBarController中添加了一个UIViewController的category，类别中可以返回当前的tabbar，所以可以用下面的代码在viewcontroller的任意位置调用self.customTabBarController
+
+//隐藏
+[self.customTabBarController hidesTabBar:YES animated:YES];
+//显示
+[self.customTabBarController hidesTabBar:NO animated:YES];
 ```
 
 #Good luck
