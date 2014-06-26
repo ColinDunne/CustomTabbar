@@ -27,6 +27,14 @@
 {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    self.title = @"比赛";
+    
+    UILabel *lbl = [[UILabel alloc] initWithFrame:CGRectMake(320/2-200/2, 150, 200, 100)];
+    lbl.text = self.title;
+    lbl.font = [UIFont boldSystemFontOfSize:100];
+    lbl.textAlignment = NSTextAlignmentCenter;
+    lbl.textColor = [UIColor grayColor];
+    [self.view addSubview:lbl];
 }
 
 - (void)didReceiveMemoryWarning

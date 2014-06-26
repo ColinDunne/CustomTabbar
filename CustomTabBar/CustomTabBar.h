@@ -8,8 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-#define MYTabBarHeight 49
-
 @class CustomTabBar;
 @protocol CustomTabBarDelegate<NSObject>
 

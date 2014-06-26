@@ -8,6 +8,7 @@
 
 #import "CustomTabBar.h"
 
+
 @implementation CustomTabBar
 
 @synthesize backgroundView = _backgroundView;
@@ -31,6 +32,9 @@
         UILabel *lbl;
 		CGFloat width = 320.0f / [imageArray count];
         
+        CGFloat button_width = 24;
+        CGFloat button_height = 18;
+        
 		for (int i = 0; i < [imageArray count]; i++)
 		{
 			btn = [UIButton buttonWithType:UIButtonTypeCustom];
@@ -38,7 +42,7 @@
             btn.backgroundColor = [UIColor clearColor];
 			btn.tag = i;
 			btn.frame = CGRectMake(width*(i), 0, width, MYTabBarHeight);
-            [btn setImageEdgeInsets:UIEdgeInsetsMake(7, 16, 13, 16)];
+            [btn setImageEdgeInsets:UIEdgeInsetsMake(10, (64 - button_width)/2+10, (MYTabBarHeight - button_height)/2+8, (64 - button_width)/2+10)];
 			[btn setImage:[[imageArray objectAtIndex:i] objectForKey:@"Default"] forState:UIControlStateNormal];
 			[btn setImage:[[imageArray objectAtIndex:i] objectForKey:@"Highlighted"] forState:UIControlStateHighlighted];
 			[btn setImage:[[imageArray objectAtIndex:i] objectForKey:@"Seleted"] forState:UIControlStateSelected];
@@ -46,17 +50,17 @@
 			[self.buttons addObject:btn];
             
             //tabbar的文字
-			lbl = [[UILabel alloc] initWithFrame:CGRectMake(width*i, 29, width, 19)];
+			lbl = [[UILabel alloc] initWithFrame:CGRectMake(width*i, 25, width, 19)];
             lbl.backgroundColor = [UIColor clearColor];
             lbl.userInteractionEnabled = YES;
             lbl.textAlignment = NSTextAlignmentCenter;
             lbl.text = [[imageArray objectAtIndex:i] objectForKey:@"Title"];
-            lbl.textColor = [UIColor whiteColor];
+            lbl.textColor = [UIColor colorWithRed:84/255.0 green:84/255.0 blue:84/255.0 alpha:1.0];
             lbl.font = [UIFont systemFontOfSize:12];
             lbl.tag = [[NSString stringWithFormat:@"%d%d",i+1,i+1] intValue];
             
             if (i==0) {
-                lbl.textColor = [UIColor whiteColor];
+                lbl.textColor = lblTextColor;
             }
             
             [self addSubview:lbl];

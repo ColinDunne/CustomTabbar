@@ -14,6 +14,8 @@
 {
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     // Override point for customization after application launch.
+    [self initCustomtabbar];
+    
     self.window.backgroundColor = [UIColor whiteColor];
     [self.window makeKeyAndVisible];
     return YES;
@@ -62,7 +64,7 @@
     [customTabBarController setTabBarTransparent:YES];
     customTabBarController.delegate = self;
     
-    [_window setRootViewController:_nav];
+    [self.window setRootViewController:customTabBarController];
 
 }
 

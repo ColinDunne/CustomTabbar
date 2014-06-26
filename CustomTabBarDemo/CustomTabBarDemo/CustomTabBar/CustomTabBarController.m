@@ -9,6 +9,7 @@
 #import "CustomTabBarController.h"
 #import "AppDelegate.h"
 
+
 @interface CustomTabBarController (private)
 
 - (void)displayViewAtIndex:(NSUInteger)index;
@@ -37,7 +38,8 @@ static CustomTabBarController *customTabBarController;
 		_viewControllers = [[NSMutableArray arrayWithArray:vcs] retain];
 		
         CGRect rect = [[UIScreen mainScreen] applicationFrame];
-        if ([kSYSTEMVERSION intValue]>=7) {
+        
+        if ([[[UIDevice currentDevice] systemVersion] intValue]>=7) {
             rect.size.height += 20;
         }
         
@@ -259,13 +261,13 @@ static CustomTabBarController *customTabBarController;
     //先把所有的label的文字设置成 rgb 84 84 84；
     for (UIView *view in tabBar.subviews) {
         if ([view isKindOfClass:[UILabel class]]) {
-            ((UILabel*)view).textColor = [UIColor whiteColor];
+            ((UILabel*)view).textColor = [UIColor colorWithRed:84/255.0 green:84/255.0 blue:84/255.0 alpha:1.0];
         }
     }
     
     //然后把选中的label的文字颜色设置成。。
     UILabel *lbl = (UILabel*)[tabBar viewWithTag:[[NSString stringWithFormat:@"%d%d",index+1,index+1] intValue]];
-    lbl.textColor = [UIColor whiteColor];
+    lbl.textColor = lblTextColor;
     
     if (index==0) {
         

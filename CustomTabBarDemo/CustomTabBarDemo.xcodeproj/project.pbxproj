@@ -19,12 +19,20 @@
 		4DACEB94195BB79B009EE34F /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4DACEB7C195BB79B009EE34F /* UIKit.framework */; };
 		4DACEB9C195BB79B009EE34F /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 4DACEB9A195BB79B009EE34F /* InfoPlist.strings */; };
 		4DACEB9E195BB79B009EE34F /* CustomTabBarDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DACEB9D195BB79B009EE34F /* CustomTabBarDemoTests.m */; };
-		4DACEBAC195BB7BA009EE34F /* CustomTabBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DACEBA9195BB7BA009EE34F /* CustomTabBar.m */; };
-		4DACEBAD195BB7BA009EE34F /* CustomTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DACEBAB195BB7BA009EE34F /* CustomTabBarController.m */; };
+		4DACEBAC195BB7BA009EE34F /* CustomTabBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DACEBA9195BB7BA009EE34F /* CustomTabBar.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		4DACEBAD195BB7BA009EE34F /* CustomTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DACEBAB195BB7BA009EE34F /* CustomTabBarController.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		4DACEBB1195BB875009EE34F /* FirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DACEBB0195BB875009EE34F /* FirstViewController.m */; };
 		4DACEBB4195BB880009EE34F /* SecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DACEBB3195BB880009EE34F /* SecondViewController.m */; };
 		4DACEBB7195BB889009EE34F /* ThirdViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DACEBB6195BB889009EE34F /* ThirdViewController.m */; };
 		4DACEBBA195BB894009EE34F /* ForthViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DACEBB9195BB894009EE34F /* ForthViewController.m */; };
+		4DACEBC4195BBAF1009EE34F /* 数据-按下.png in Resources */ = {isa = PBXBuildFile; fileRef = 4DACEBBC195BBAF1009EE34F /* 数据-按下.png */; };
+		4DACEBC5195BBAF1009EE34F /* 数据.png in Resources */ = {isa = PBXBuildFile; fileRef = 4DACEBBD195BBAF1009EE34F /* 数据.png */; };
+		4DACEBC6195BBAF1009EE34F /* 新闻-按下.png in Resources */ = {isa = PBXBuildFile; fileRef = 4DACEBBE195BBAF1009EE34F /* 新闻-按下.png */; };
+		4DACEBC7195BBAF1009EE34F /* 新闻.png in Resources */ = {isa = PBXBuildFile; fileRef = 4DACEBBF195BBAF1009EE34F /* 新闻.png */; };
+		4DACEBC8195BBAF1009EE34F /* 更多-按下.png in Resources */ = {isa = PBXBuildFile; fileRef = 4DACEBC0195BBAF1009EE34F /* 更多-按下.png */; };
+		4DACEBC9195BBAF1009EE34F /* 更多-新闻.png in Resources */ = {isa = PBXBuildFile; fileRef = 4DACEBC1195BBAF1009EE34F /* 更多-新闻.png */; };
+		4DACEBCA195BBAF1009EE34F /* 比赛-按下.png in Resources */ = {isa = PBXBuildFile; fileRef = 4DACEBC2195BBAF1009EE34F /* 比赛-按下.png */; };
+		4DACEBCB195BBAF1009EE34F /* 比赛.png in Resources */ = {isa = PBXBuildFile; fileRef = 4DACEBC3195BBAF1009EE34F /* 比赛.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -66,6 +74,14 @@
 		4DACEBB6195BB889009EE34F /* ThirdViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ThirdViewController.m; sourceTree = "<group>"; };
 		4DACEBB8195BB894009EE34F /* ForthViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ForthViewController.h; sourceTree = "<group>"; };
 		4DACEBB9195BB894009EE34F /* ForthViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ForthViewController.m; sourceTree = "<group>"; };
+		4DACEBBC195BBAF1009EE34F /* 数据-按下.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "数据-按下.png"; sourceTree = "<group>"; };
+		4DACEBBD195BBAF1009EE34F /* 数据.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "数据.png"; sourceTree = "<group>"; };
+		4DACEBBE195BBAF1009EE34F /* 新闻-按下.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "新闻-按下.png"; sourceTree = "<group>"; };
+		4DACEBBF195BBAF1009EE34F /* 新闻.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "新闻.png"; sourceTree = "<group>"; };
+		4DACEBC0195BBAF1009EE34F /* 更多-按下.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "更多-按下.png"; sourceTree = "<group>"; };
+		4DACEBC1195BBAF1009EE34F /* 更多-新闻.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "更多-新闻.png"; sourceTree = "<group>"; };
+		4DACEBC2195BBAF1009EE34F /* 比赛-按下.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "比赛-按下.png"; sourceTree = "<group>"; };
+		4DACEBC3195BBAF1009EE34F /* 比赛.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "比赛.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -131,6 +147,7 @@
 				4DACEB88195BB79B009EE34F /* AppDelegate.m */,
 				4DACEB8A195BB79B009EE34F /* Images.xcassets */,
 				4DACEB7F195BB79B009EE34F /* Supporting Files */,
+				4DACEBBB195BBAF1009EE34F /* resource */,
 			);
 			path = CustomTabBarDemo;
 			sourceTree = "<group>";
@@ -188,6 +205,21 @@
 				4DACEBB9195BB894009EE34F /* ForthViewController.m */,
 			);
 			name = ViewControllers;
+			sourceTree = "<group>";
+		};
+		4DACEBBB195BBAF1009EE34F /* resource */ = {
+			isa = PBXGroup;
+			children = (
+				4DACEBBC195BBAF1009EE34F /* 数据-按下.png */,
+				4DACEBBD195BBAF1009EE34F /* 数据.png */,
+				4DACEBBE195BBAF1009EE34F /* 新闻-按下.png */,
+				4DACEBBF195BBAF1009EE34F /* 新闻.png */,
+				4DACEBC0195BBAF1009EE34F /* 更多-按下.png */,
+				4DACEBC1195BBAF1009EE34F /* 更多-新闻.png */,
+				4DACEBC2195BBAF1009EE34F /* 比赛-按下.png */,
+				4DACEBC3195BBAF1009EE34F /* 比赛.png */,
+			);
+			path = resource;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -265,8 +297,16 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4DACEBCB195BBAF1009EE34F /* 比赛.png in Resources */,
 				4DACEB83195BB79B009EE34F /* InfoPlist.strings in Resources */,
+				4DACEBC4195BBAF1009EE34F /* 数据-按下.png in Resources */,
+				4DACEBC9195BBAF1009EE34F /* 更多-新闻.png in Resources */,
 				4DACEB8B195BB79B009EE34F /* Images.xcassets in Resources */,
+				4DACEBC5195BBAF1009EE34F /* 数据.png in Resources */,
+				4DACEBC7195BBAF1009EE34F /* 新闻.png in Resources */,
+				4DACEBC6195BBAF1009EE34F /* 新闻-按下.png in Resources */,
+				4DACEBCA195BBAF1009EE34F /* 比赛-按下.png in Resources */,
+				4DACEBC8195BBAF1009EE34F /* 更多-按下.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -412,6 +452,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "CustomTabBarDemo/CustomTabBarDemo-Prefix.pch";
 				INFOPLIST_FILE = "CustomTabBarDemo/CustomTabBarDemo-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -425,6 +466,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "CustomTabBarDemo/CustomTabBarDemo-Prefix.pch";
 				INFOPLIST_FILE = "CustomTabBarDemo/CustomTabBarDemo-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
