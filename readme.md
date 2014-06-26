@@ -1,6 +1,7 @@
 一个方便好用的自定义tabbar，注意，不支持arc，需添加-fno-objc-arc
 
-![image](https://raw.githubusercontent.com/jxd001/CustomTabbar/master/Untitled3.gif)
+![image](https://raw.githubusercontent.com/jxd001/CustomTabbar/master/Untitled3.gif) 
+
 ![image](https://raw.githubusercontent.com/jxd001/CustomTabbar/master/Untitled4.gif)
 ###Step 1，在Appdelegate.h添加代理
 
