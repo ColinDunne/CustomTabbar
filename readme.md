@@ -1,4 +1,4 @@
-#Step 1 ， 在Appdelegate.h添加代理
+###Step 1，在Appdelegate.h添加代理
 
 ```obj-c
  
@@ -11,7 +11,7 @@
     
 ```
 
-#Step 2 ，Appdelegate.m中
+###Step 2，Appdelegate.m中
 
 ```obj-c
  //要装入tabbar的ctrlers
@@ -32,7 +32,7 @@
     
 ```
 
-#Step 3
+###Step 3
 
 ```obj-c
 //自定义tabbar的图片、选中的图片、title
@@ -59,7 +59,7 @@
     NSArray *imgArr = [NSArray arrayWithObjects:imgDic,imgDic2,imgDic3,imgDic4,nil];
 ```
 
-#Step 4
+###Step 4
 
 ```obj-c
  customTabBarController = [[CustomTabBarController alloc]initWithViewControllers:ctrlArray imageArray:imgArr];
