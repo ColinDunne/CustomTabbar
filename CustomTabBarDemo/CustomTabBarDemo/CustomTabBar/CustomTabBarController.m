@@ -282,25 +282,14 @@ static CustomTabBarController *customTabBarController;
     else
     {
         //移除上一个页面
-//        UIViewController *selectedVC = [self.viewControllers objectAtIndex:self.selectedIndex];
-//        [selectedVC.view removeFromSuperview];
         for (int i=0; i<self.viewControllers.count; i++) {
             if (i!=index)
             {
               UIViewController *selectedVC = [self.viewControllers objectAtIndex:i];
                 
-              NSLog(@"%@'s view removeFromSuperView",selectedVC.view);
+//              NSLog(@"%@'s view removeFromSuperView",selectedVC.view);
               [selectedVC.view removeFromSuperview];
-                
-//                MLNavigationController *selectedVC = [self.viewControllers objectAtIndex:i];
-//                
-//                NSLog(@"%@'s view removeFromSuperView",((UIViewController*)[selectedVC.viewControllers objectAtIndex:0]));
-//                if ([((UIViewController*)[selectedVC.viewControllers objectAtIndex:0]).view isDescendantOfView:_transitionView])
-//                {
-//                    [_transitionView sendSubviewToBack:((UIViewController*)[selectedVC.viewControllers objectAtIndex:0]).view];
-//                    //[((UIViewController*)[selectedVC.viewControllers objectAtIndex:0]).view removeFromSuperview];
-//                }
-                
+
             }
         }
         [self displayViewAtIndex:index];
