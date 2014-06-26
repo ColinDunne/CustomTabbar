@@ -1,4 +1,17 @@
-#Step 1
+#Step 1 ， 在Appdelegate.h添加代理
+
+```obj-c
+ 
+@interface AppDelegate : UIResponder <UIApplicationDelegate,CustomTabBarControllerDelegate>
+
+@property (strong, nonatomic) UIWindow *window;
+
+@end
+
+    
+```
+
+#Step 2 ，Appdelegate.m中
 
 ```obj-c
  //要装入tabbar的ctrlers
@@ -19,10 +32,10 @@
     
 ```
 
-#Step 2
+#Step 3
 
 ```obj-c
-//自定义tabbar的图片
+//自定义tabbar的图片、选中的图片、title
     NSMutableDictionary *imgDic = [NSMutableDictionary dictionaryWithCapacity:3];
     [imgDic setObject:[UIImage imageNamed:@"新闻"] forKey:@"Default"];
     [imgDic setObject:[UIImage imageNamed:@"新闻-按下"] forKey:@"Seleted"];
@@ -46,7 +59,7 @@
     NSArray *imgArr = [NSArray arrayWithObjects:imgDic,imgDic2,imgDic3,imgDic4,nil];
 ```
 
-#Step 3
+#Step 4
 
 ```obj-c
  customTabBarController = [[CustomTabBarController alloc]initWithViewControllers:ctrlArray imageArray:imgArr];
