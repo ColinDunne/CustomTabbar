@@ -8,7 +8,7 @@
 
 #import "CustomTabBarController.h"
 #import "AppDelegate.h"
-#import "MLNavigationController.h"
+
 
 @interface CustomTabBarController (private)
 
@@ -39,7 +39,7 @@ static CustomTabBarController *customTabBarController;
 		
         CGRect rect = [[UIScreen mainScreen] applicationFrame];
         
-        if ([kSYSTEMVERSION intValue]>=7) {
+        if ([[[UIDevice currentDevice] systemVersion] intValue]>=7) {
             rect.size.height += 20;
         }
         
@@ -267,7 +267,7 @@ static CustomTabBarController *customTabBarController;
     
     //然后把选中的label的文字颜色设置成。。
     UILabel *lbl = (UILabel*)[tabBar viewWithTag:[[NSString stringWithFormat:@"%d%d",index+1,index+1] intValue]];
-    lbl.textColor = kAPPREDCOLOR;
+    lbl.textColor = lblTextColor;
     
     if (index==0) {
         
@@ -282,25 +282,14 @@ static CustomTabBarController *customTabBarController;
     else
     {
         //移除上一个页面
-//        UIViewController *selectedVC = [self.viewControllers objectAtIndex:self.selectedIndex];
-//        [selectedVC.view removeFromSuperview];
         for (int i=0; i<self.viewControllers.count; i++) {
             if (i!=index)
             {
               UIViewController *selectedVC = [self.viewControllers objectAtIndex:i];
                 
-              NSLog(@"%@'s view removeFromSuperView",selectedVC.view);
+//              NSLog(@"%@'s view removeFromSuperView",selectedVC.view);
               [selectedVC.view removeFromSuperview];
-                
-//                MLNavigationController *selectedVC = [self.viewControllers objectAtIndex:i];
-//                
-//                NSLog(@"%@'s view removeFromSuperView",((UIViewController*)[selectedVC.viewControllers objectAtIndex:0]));
-//                if ([((UIViewController*)[selectedVC.viewControllers objectAtIndex:0]).view isDescendantOfView:_transitionView])
-//                {
-//                    [_transitionView sendSubviewToBack:((UIViewController*)[selectedVC.viewControllers objectAtIndex:0]).view];
-//                    //[((UIViewController*)[selectedVC.viewControllers objectAtIndex:0]).view removeFromSuperview];
-//                }
-                
+
             }
         }
         [self displayViewAtIndex:index];

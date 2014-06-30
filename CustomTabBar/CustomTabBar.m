@@ -8,6 +8,7 @@
 
 #import "CustomTabBar.h"
 
+
 @implementation CustomTabBar
 
 @synthesize backgroundView = _backgroundView;
@@ -59,7 +60,7 @@
             lbl.tag = [[NSString stringWithFormat:@"%d%d",i+1,i+1] intValue];
             
             if (i==0) {
-                lbl.textColor = kAPPREDCOLOR;
+                lbl.textColor = lblTextColor;
             }
             
             [self addSubview:lbl];

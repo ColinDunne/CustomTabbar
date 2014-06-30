@@ -8,6 +8,10 @@
 
 #import <UIKit/UIKit.h>
 
+#define MYTabBarHeight 49
+#define lblTextColor    [UIColor redColor];
+
+
 @class CustomTabBar;
 @protocol CustomTabBarDelegate<NSObject>
 
